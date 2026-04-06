@@ -1,0 +1,18 @@
+output_dir: "results/evaluate"
+seed: 10
+task: "REDDIT"
+dryrun: False
+save_prompts: True
+timeout: 0.0
+store: True
+task_config: 
+    path: "synthpai_predict/predicted_llama2_7b_nodefense.jsonl"
+    outpath: "eval_synthpai/llama2_7b_nodefense.jsonl"
+    eval: True
+    decider: "model"
+gen_model:
+  name: "gpt-4o"
+  provider: "openai"
+  args: {
+    temperature: 0.1
+  }

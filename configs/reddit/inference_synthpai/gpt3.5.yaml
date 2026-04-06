@@ -1,0 +1,20 @@
+output_dir: "results"
+seed: 10
+task: "REDDIT"
+dryrun: False
+save_prompts: True
+timeout: 0.0
+task_config: 
+    path: "data/synthetic/synthpai.jsonl"
+    outpath: "synthpai_predict/predicted_gpt35_nodfense.jsonl"
+    profile_filter:
+      hardness: 1
+      certainty: 1
+      num_tokens: 3000
+    eval: False
+gen_model:
+  name: "gpt-3.5-turbo"
+  provider: "openai"
+  args: {
+    temperature: 0
+  }

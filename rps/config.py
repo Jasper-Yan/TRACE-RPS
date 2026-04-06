@@ -1,0 +1,20 @@
+VICUNA_PATH = "hf_models/vicuna-7b-v1.5"
+LLAMA_7B_PATH = "llama_hf/llama_7b_chat"
+LLAMA_13B_PATH = "llama_hf/llama_13b_chat"
+LLAMA_70B_PATH = "llama_hf/llama_70b_chat"
+LLAMA3_1B_PATH = "hf_models/Llama-3.2-1B-Instruct"
+LLAMA3_3B_PATH = "hf_models/Llama-3.2-3B-Instruct"
+LLAMA3_8B_PATH = "hf_models/Llama-3.1-8B-Instruct"
+QWEN25_7B_PATH = "hf_models/Qwen2.5-7B"
+DEEPSEEK_8B_LLAMA_PATH = "hf_models/DeepSeek-R1-Distill-Llama-8B"
+DEEPSEEK_8B_QWEN_PATH = "hf_models/DeepSeek-R1-Distill-Qwen-7B"
+LLAMA3_70B_PATH = "meta-llama/Meta-Llama-3-70B-Instruct"
+GEMMA_2B_PATH = "google/gemma-2b-it"
+GEMMA_7B_PATH = "google/gemma-7b-it"
+MISTRAL_7B_PATH = "hf_models/Mistral-7B-Instruct-v0.3"
+MIXTRAL_7B_PATH = "mistralai/Mixtral-8x7B-Instruct-v0.1"
+R2D2_PATH = "cais/zephyr_7b_r2d2"
+PHI3_MINI_PATH = "microsoft/Phi-3-mini-128k-instruct"
+
+TARGET_TEMP = 0
+TARGET_TOP_P = 1.0

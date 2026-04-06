@@ -1,0 +1,26 @@
+output_dir: "results"
+seed: 10
+task: "REDDIT"
+dryrun: False
+save_prompts: True
+timeout: 0.0
+task_config: 
+    path: "data/synthetic/synthetic_dataset.jsonl"
+    outpath: "synthetic_predicted/predicted_deepseek_nodefense.jsonl"
+    profile_filter:
+      hardness: 1
+      certainty: 1
+      num_tokens: 3000
+    eval: False
+gen_model: 
+  name: "deepseek_r1"
+  path: "DeepSeek-R1-Distill-Qwen-7B"
+  provider: "hf"
+  model_template: "<｜begin▁of▁sentence｜><｜User｜>{prompt}<｜Assistant｜><think>\n"
+  dtype: "bfloat16"
+  max_workers: 16
+  args: {
+    max_new_tokens: 2000,
+    temperature: 0,
+    do_sample: False
+  }
